@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    okk DONE
+    <!-- 
+    {% for x in re %}
+    <p> {{ x.name }} </p>
+    <p> {{ x.age }} </p>
+    {% endfor %} -->
+    answer:
+    <p>{{ t }}</p>
+    <form action="/add/" method="POST">
+        {% csrf_token %}
+        Input the Name : <input type="text" name="name">
+        Input the number : <input type="text" name="age">
+        <button type="submit"> Submit </button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+
+<body>
+    {% block content %}
+
+
+
+
+    <form action="/add/" method="POST">
+        {% csrf_token %}
+
+        <h1>Want to play a game : </h1>
+        Input the Name : <input type="text" name="name">
+        Input the number : <input type="text" name="age">
+
+        <button type="submit"> Submit </button>
+    </form>
+    {% endblock %}
+
+
+</body>
+
+</html>
